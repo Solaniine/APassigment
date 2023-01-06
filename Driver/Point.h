@@ -8,8 +8,7 @@ private:
 
 public:
     // Default constructor
-    Point();
-
+    Point() : x(0), y(0){}
     // Constructor with x and y coordinates
     Point(double x, double y);
 

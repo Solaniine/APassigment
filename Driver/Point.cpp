@@ -1,13 +1,6 @@
 #include "point.h"
-//default
-Point::Point() : x(0), y(0) 
-{
-}
 //construct for the points x and y object
-Point::Point(double x, double y) : x(x), y(y)
-{
-}
-
+Point::Point(double x, double y) : x(x), y(y){}
 
 double Point::getX() const 
 {
