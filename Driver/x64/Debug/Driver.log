@@ -1,22 +1,152 @@
-﻿  Driver.cpp
-C:\Users\Student\source\repos\APassigment\Driver\Driver.cpp(63,4): error C2065: 'x': undeclared identifier
-C:\Users\Student\source\repos\APassigment\Driver\Driver.cpp(69,4): error C2065: 'Rectangle': undeclared identifier
-C:\Users\Student\source\repos\APassigment\Driver\Driver.cpp(69,15): error C2065: 'r': undeclared identifier
-C:\Users\Student\source\repos\APassigment\Driver\Driver.cpp(69,23): error C2061: syntax error: identifier 'Rectangle'
-C:\Users\Student\source\repos\APassigment\Driver\Driver.cpp(70,21): error C2065: 'r': undeclared identifier
-C:\Users\Student\source\repos\APassigment\Driver\Driver.cpp(71,12): error C2065: 'r': undeclared identifier
-C:\Users\Student\source\repos\APassigment\Driver\Driver.cpp(77,4): error C2065: 'Square': undeclared identifier
-C:\Users\Student\source\repos\APassigment\Driver\Driver.cpp(77,12): error C2065: 's': undeclared identifier
-C:\Users\Student\source\repos\APassigment\Driver\Driver.cpp(77,20): error C2061: syntax error: identifier 'Square'
-C:\Users\Student\source\repos\APassigment\Driver\Driver.cpp(78,21): error C2065: 's': undeclared identifier
-C:\Users\Student\source\repos\APassigment\Driver\Driver.cpp(79,12): error C2065: 's': undeclared identifier
-C:\Users\Student\source\repos\APassigment\Driver\Driver.cpp(85,4): error C2065: 'Circle': undeclared identifier
-C:\Users\Student\source\repos\APassigment\Driver\Driver.cpp(85,12): error C2065: 'c': undeclared identifier
-C:\Users\Student\source\repos\APassigment\Driver\Driver.cpp(85,20): error C2061: syntax error: identifier 'Circle'
-C:\Users\Student\source\repos\APassigment\Driver\Driver.cpp(86,21): error C2065: 'c': undeclared identifier
-C:\Users\Student\source\repos\APassigment\Driver\Driver.cpp(87,12): error C2065: 'c': undeclared identifier
-C:\Users\Student\source\repos\APassigment\Driver\Driver.cpp(107,12): error C2065: 'x': undeclared identifier
-C:\Users\Student\source\repos\APassigment\Driver\Driver.cpp(107,15): error C2065: 'y': undeclared identifier
+﻿  Circle.cpp
+C:\Users\Student\source\repos\APassigment\Driver\Shape.h(27,20): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+C:\Users\Student\source\repos\APassigment\Driver\Circle.cpp(13,15): warning C4244: '=': conversion from 'float' to 'short', possible loss of data
+C:\Users\Student\source\repos\APassigment\Driver\Circle.cpp(44,10): warning C4244: '*=': conversion from 'float' to 'short', possible loss of data
+  Driver.cpp
+C:\Users\Student\source\repos\APassigment\Driver\Shape.h(27,20): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+C:\Users\Student\source\repos\APassigment\Driver\Driver.cpp(94,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   Point.cpp
+  Rectangle.cpp
+C:\Users\Student\source\repos\APassigment\Driver\Shape.h(27,20): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(10,121): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(10,113): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(28,50): error C2039: 'getXCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(28,90): error C2039: 'getYCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(28,106): error C2440: '<function-style-cast>': cannot convert from 'int' to 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(28,106): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(29,53): error C2039: 'getXCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(29,97): error C2039: 'getYCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(30,48): error C2039: 'getXCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(30,83): error C2039: 'getYCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(30,109): error C2440: '<function-style-cast>': cannot convert from 'int' to 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(30,109): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,48): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,57): error C3861: 'to_string': identifier not found
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,81): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,90): error C3861: 'to_string': identifier not found
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,121): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,149): error C2039: 'getXCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,130): error C3861: 'to_string': identifier not found
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,180): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,208): error C2039: 'getYCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,189): error C3861: 'to_string': identifier not found
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,240): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,268): error C2039: 'getXCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,249): error C3861: 'to_string': identifier not found
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,299): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,327): error C2039: 'getYCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,308): error C3861: 'to_string': identifier not found
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,359): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,387): error C2039: 'getXCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,368): error C3861: 'to_string': identifier not found
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,418): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,446): error C2039: 'getYCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,427): error C3861: 'to_string': identifier not found
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,478): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,506): error C2039: 'getXCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,487): error C3861: 'to_string': identifier not found
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,537): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,565): error C2039: 'getYCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(53,546): error C3861: 'to_string': identifier not found
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(54,14): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(54,23): error C3861: 'to_string': identifier not found
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(54,64): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Rectangle.cpp(54,73): error C3861: 'to_string': identifier not found
   Shape.cpp
+C:\Users\Student\source\repos\APassigment\Driver\Shape.h(27,20): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+  Square.cpp
+C:\Users\Student\source\repos\APassigment\Driver\Shape.h(27,20): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(8,94): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(24,50): error C2039: 'getXCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(24,89): error C2039: 'getYCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(24,105): error C2440: '<function-style-cast>': cannot convert from 'int' to 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(24,105): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(25,53): error C2039: 'getXCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(25,96): error C2039: 'getYCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(26,48): error C2039: 'getXCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(26,83): error C2039: 'getYCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(26,107): error C2440: '<function-style-cast>': cannot convert from 'int' to 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(26,107): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,45): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,54): error C3861: 'to_string': identifier not found
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,84): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,112): error C2039: 'getXCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,93): error C3861: 'to_string': identifier not found
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,143): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,171): error C2039: 'getYCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,152): error C3861: 'to_string': identifier not found
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,203): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,231): error C2039: 'getXCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,212): error C3861: 'to_string': identifier not found
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,262): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,290): error C2039: 'getYCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,271): error C3861: 'to_string': identifier not found
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,322): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,350): error C2039: 'getXCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,331): error C3861: 'to_string': identifier not found
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,381): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,409): error C2039: 'getYCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,390): error C3861: 'to_string': identifier not found
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,441): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,469): error C2039: 'getXCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,450): error C3861: 'to_string': identifier not found
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,500): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,528): error C2039: 'getYCoordinate': is not a member of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Point.h(3): message : see declaration of 'Point'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(48,509): error C3861: 'to_string': identifier not found
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(49,14): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(49,23): error C3861: 'to_string': identifier not found
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(49,64): error C2039: 'to_string': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(24): message : see declaration of 'std'
+C:\Users\Student\source\repos\APassigment\Driver\Square.cpp(49,73): error C3861: 'to_string': identifier not found
   Generating Code...
+C:\Users\Student\source\repos\APassigment\Driver\Driver.cpp(103): error C4700: uninitialized local variable 'shapeNo' used
