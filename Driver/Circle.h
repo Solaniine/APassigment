@@ -7,11 +7,12 @@ class Circle : public Shape, public Movable {
 
 private:
 
-    short radius;
+    short r;
 
 public:
 
-    Circle();Circle(int xCoordinate, int yCoordinate, float radius);
+    Circle();
+    Circle(int xCoordinate, int yCoordinate, float radius);
     double calculateArea() override;
     double calculatePerimeter() override;
     void calculatePoints() override;
