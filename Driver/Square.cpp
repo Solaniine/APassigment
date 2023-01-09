@@ -1,5 +1,7 @@
 #include "Square.h"
+#include <string>
 
+using namespace std;
 Square::Square() : Shape()
 {
     edge = 0;
@@ -21,9 +23,9 @@ double Square::calculatePerimeter() {
 void Square::calculatePoints() {
     std::vector<Point> newPoints;
     Point leftTopPoint = getLeftTopPoint();
-    Point rightTopPoint = Point(int(leftTopPoint.getXCoordinate() + edge), leftTopPoint.getYCoordinate());
-    Point rightBottomPoint = Point(int(leftTopPoint.getXCoordinate() + edge), int(leftTopPoint.getYCoordinate() + edge));
-    Point leftBottomPoint = Point(leftTopPoint.getXCoordinate(), int(leftTopPoint.getYCoordinate() + edge));
+    Point rightTopPoint = Point(int(leftTopPoint.getX() + edge), leftTopPoint.getY());
+    Point rightBottomPoint = Point(int(leftTopPoint.getX() + edge), int(leftTopPoint.getY() + edge));
+    Point leftBottomPoint = Point(leftTopPoint.getX(), int(leftTopPoint.getY() + edge));
 
     newPoints.push_back(leftTopPoint);
     newPoints.push_back(rightTopPoint);
@@ -45,7 +47,7 @@ void Square::scale(float scaleX, float scaleY) {
 }
 
 std::string Square::toString() {
-    std::string prompt = "Square[e=" + std::to_string(edge) + "]\nPoints[(" + std::to_string(getPoints().at(0).getXCoordinate()) + "," + std::to_string(getPoints().at(0).getYCoordinate()) + ")(" + std::to_string(getPoints().at(1).getXCoordinate()) + "," + std::to_string(getPoints().at(1).getYCoordinate()) + ")(" + std::to_string(getPoints().at(2).getXCoordinate()) + "," + std::to_string(getPoints().at(2).getYCoordinate()) + ")(" + std::to_string(getPoints().at(3).getXCoordinate()) + "," + std::to_string(getPoints().at(3).getYCoordinate()) + ")]\n Area=" +
+    std::string prompt = "Square[e=" + std::to_string(edge) + "]\nPoints[(" + std::to_string(getPoints().at(0).getX()) + "," + std::to_string(getPoints().at(0).getY()) + ")(" + std::to_string(getPoints().at(1).getX()) + "," + std::to_string(getPoints().at(1).getY()) + ")(" + std::to_string(getPoints().at(2).getX()) + "," + std::to_string(getPoints().at(2).getY()) + ")(" + std::to_string(getPoints().at(3).getX()) + "," + std::to_string(getPoints().at(3).getY()) + ")]\n Area=" +
         std::to_string(calculateArea()) + " Perimeter=" + std::to_string(calculatePerimeter());
     return prompt;
 }

@@ -99,7 +99,7 @@ int main()
 		else if (command.compare("scale") == 0) {
 		}
 		else if (command.compare("move") == 0) {
-			int shapeNo; 
+			int shapeNo{}; 
 			Movable* m = dynamic_cast<Movable*>(shapes[shapeNo - 1]);
 			m->move(x, y);
 			cout << shapes[shapeNo - 1]->toString();

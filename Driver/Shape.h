@@ -24,7 +24,7 @@ public:
 	Shape();
 	Shape(int xCoordinate, int yCoordinate, float length);
 	Shape(int xCoordinate, int yCoordinate, float height, float width);
-    const int pi = 3.14592;
+    const double pi = 3.14592;
 
     std::vector<Point> getPoints() { return points; };
     Point getLeftTopPoint() { return leftTop; };
