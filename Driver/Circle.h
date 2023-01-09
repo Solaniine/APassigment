@@ -1,7 +1,7 @@
 #include <cmath>
 #include "Shape.h"
 #include "Movable.h"
-
+#include "Point.h"
 
 class Circle : public Shape, public Movable {
 

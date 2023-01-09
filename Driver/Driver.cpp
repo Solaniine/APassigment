@@ -50,16 +50,18 @@ int main()
 		// in the following code, consider checking for the arguments.
 		// in case of too few arguments, you may remind the user the correct format
 
-		if (command.compare("addR") == 0) {
-			// get parameters in the correct order
-			// The following four lines have a type mismatch error
-			// note that the parameters vector contains ascii values
-			// HINT: toString() function converts from string to int
+		cout << "Enter the command: ";
+		getline(cin, userCommand);
 
+		char* cstr = new char[userCommand.length() + 1];
+		strcpy_s(cstr, userCommand.length() + 1, userCommand.c_str());
+		switch (userCommand.compare("exit") != 0) {
+		case 1:
+			// get parameters in the correct order
 			int w = 0;                  // width of the shape
 			int h = 0;                  // height of the shape
 
-			x = atoi(parameters[1].c_str()); // fix me! not defined :(
+			x = atoi(parameters[1].c_str());
 			y = atoi(parameters[2].c_str());
 			h = atoi(parameters[3].c_str());
 			w = atoi(parameters[4].c_str());
@@ -68,52 +70,52 @@ int main()
 			shapes.push_back(r);
 			cout << r->toString();       /* instead of this, you may implement operator overloading and
 											use cout << r which will give you additional points */
-		}
-		else if (command.compare("addS") == 0) {
+			break;
 
+		case 2:
 			// get parameters
-			// ...
-			x = atoi(parameters[1].c_str()); // fix me! not defined :(
+			x = atoi(parameters[1].c_str());
 			y = atoi(parameters[2].c_str());
 			int e = atoi(parameters[3].c_str());
-
 
 			Square* s = new Square(x, y, e);
 			shapes.push_back(s);
 			cout << s->toString();
-		}
-
-
-		if (command.compare("addC") == 0) {
+			break;
+		
+		case 3:
 			// get parameters
-			// ...
-			x = atoi(parameters[1].c_str()); // fix me! not defined :(
+			x = atoi(parameters[1].c_str());
 			y = atoi(parameters[2].c_str());
-		    int r = atoi(parameters[3].c_str());
-
+			int r = atoi(parameters[3].c_str());
+	
 			Circle* c = new Circle(x, y, r);
 			shapes.push_back(c);
 			cout << c->toString();
+			break;
 
-		}
-		else if (command.compare("scale") == 0) {
-		}
-		else if (command.compare("move") == 0) {
-			int shapeNo{}; 
+		case 4:
+			// scale the specified shape by a certain factor
+			break;
+
+		case 5:
+			int shapeNo{};
 			Movable* m = dynamic_cast<Movable*>(shapes[shapeNo - 1]);
 			m->move(x, y);
 			cout << shapes[shapeNo - 1]->toString();
-		}
-		else if (command.compare("display") == 0) {
+			break;
 		}
 
-		cout << endl << endl;
+		strtok_s(parameters, cstr);
+		string command = parameters[0];
+
+
+
+		cout << "Press any key to continue...";
+		std::getchar();
+
+		return 0;
 	}
-
-	cout << "Press any key to continue...";
-	std::getchar();
-
-	return 0;
 }
 
 

@@ -29,7 +29,6 @@ public:
     std::vector<Point> getPoints() { return points; };
     Point getLeftTopPoint() { return leftTop; };
 
-
     void setIsCircular() { isCircular = true; };
     void setArea(double newArea) { this->area = newArea; };
     void setPerimeter(double newPerimeter) { this->perimeter = newPerimeter; };
